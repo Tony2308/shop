@@ -98,25 +98,24 @@ let counter = 0;
 let totalPurchase =[];
 let addButton = document.querySelectorAll('div.card p button');
 let selection = document.querySelector('.cartAside');
-
+let sumDisplay = document.querySelector('#sumDisplay');
+let itemNumber = document.querySelector('#itemNumber');
+let selectedItem = document.querySelector('div.card h1'); 
 
 for( i=0; i < addButton.length; i++){
     addButton[i].addEventListener('click',()=>{
         counter +=1;
         shoppingCart.textContent = counter;
+        itemNumber.textContent = counter;
 
         let price = parseFloat(document.querySelector('.price').textContent);
         totalPurchase.push(price);
-//adding item headers
-        let selectedItem = document.querySelectorAll('div.card h1');
-        for( i=0; i<selectedItem.length; i++ ){
 
-            let cartAside = document.querySelector('.cartAside');
-            let itemLi = document.createElement('li');
-            itemLi.textContent = selectedItem[i].textContent;
-            cartAside.appendChild(itemLi);
-            
-         }
+        let itemLi = document.createElement('li');
+        itemLi.textContent = selectedItem.textContent;   
+        selection.appendChild(itemLi);
+     
+
         //summing the prices in price arrays 
     let  unit = 0;
     for( i= 0; i< totalPurchase.length; i++){
@@ -124,10 +123,10 @@ for( i=0; i < addButton.length; i++){
         unit += totalPurchase[i];
 
         }
-        console.log(unit);  
+        sumDisplay.textContent=unit;  
+       
     });
-
-        
+     
 }
 
 

@@ -60,7 +60,7 @@ padding: 0.5em 1em;
     display: none;
     position: absolute;
     width: 300px;
-    height: 100vh;
+    height: auto;
     right: 0;
     top: 110px;
     transition: 0.7s;
@@ -68,20 +68,35 @@ padding: 0.5em 1em;
     color: white;
     font-weight: 300;
     z-index: 1111;
-    
+    padding: 4em 0em;
 }
 
 .cartAside li{
-    font-size: 1em;
-    font-weight: 300;
+    font-size: 1.2em;
+    font-weight: 400;
     list-style-type: none;
-    margin:1em ;
+    margin:1.1em ;
 }
 
+.pricetab{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding:1.2em;
+    font-size: 1.6em;
+}
 
+#sumDisplay{
+    font-weight: bolder;
+    color: chocolate;
 
+}
 
-
+#itemNumber{
+    font-weight: bolder;
+    color: crimson;
+    
+}
 
 
 
