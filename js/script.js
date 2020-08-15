@@ -21,7 +21,7 @@ shoppingCartAside.addEventListener('click',()=>{
 
    if( aside.style.display === 'none' ) {
        aside.style.display = 'block';
-       main.style.right = '20%';
+       main.style.marginRight = '20%';
    } else {
        aside.style.display = 'none';
    }

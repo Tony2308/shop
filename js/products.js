@@ -123,7 +123,12 @@ for( i=0; i < addButton.length; i++){
         totalPurchase.push(price);
 
         let itemLi = document.createElement('li');
-        itemLi.textContent = selectedItem.textContent;   
+        let removeButton = document.createElement('button');
+        removeButton.className = 'removeItems';
+        removeButton.textContent = 'Remove Item';
+    
+    itemLi.textContent = selectedItem.textContent  ;
+    itemLi.appendChild(removeButton);
         selection.appendChild(itemLi);
      
 
