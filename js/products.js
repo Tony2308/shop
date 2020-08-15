@@ -56,15 +56,15 @@ let products = [
     },
 
     {
-        image: '<img src="./img/watch.jpg" alt="Denim Jeans">',
-        title: '<h1>Designer watches</h1>',
+        image: '<img src="./img/bag.jpg" alt="Denim Jeans">',
+        title: '<h1>Designer bags</h1>',
         price: '<span>$</span><p class="price">19.99</p>',
         caption: '<p>Some text about the watches..</p>',
         purchase:'<p><button>Add to Cart</button></p>'
     },
 
     {
-        image: '<img src="./img/watch.jpg" alt="Denim Jeans">',
+        image: '<img src="./img/wallet.jpg" alt="Denim Jeans">',
         title: '<h1>Designer watches</h1>',
         price: '<span>$</span><p class="price">19.99</p>',
         caption: '<p>Some text about the watches..</p>',
@@ -72,6 +72,17 @@ let products = [
     }
 
 ]
+//adding new item to products array
+let newProduct = {
+    image: '<img src="./img/jeans.jpg" alt="Denim Jeans">',
+    title: '<h1>Designer Jeans</h1>',
+    price: '<span>$</span><p class="price">19.99</p>',
+    caption: '<p>Some text about the designer jeans..</p>',
+    purchase:'<p><button>Add to Cart</button></p>'
+}
+
+products.push(newProduct);
+
 
 // adding objects to page
 

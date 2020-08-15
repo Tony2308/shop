@@ -15,11 +15,13 @@ toggleMenu.addEventListener('click',()=>{
 });
 
 let shoppingCartAside = document.querySelector('i.fa-shopping-cart');
+let main   = document.querySelector('section.productDisplay');
 let aside = document.querySelector('.cartAside');
 shoppingCartAside.addEventListener('click',()=>{
 
    if( aside.style.display === 'none' ) {
        aside.style.display = 'block';
+       main.style.right = '20%';
    } else {
        aside.style.display = 'none';
    }
